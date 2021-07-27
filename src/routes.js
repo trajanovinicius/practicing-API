@@ -1,6 +1,8 @@
 const express = require("express");
 const routes = express.Router();
 
-const TeamsController = require("./controllers/TeamsControllers");
+const MessageController = require("./controllers/MessageController");
 
-routes.get("/teams", TeamsController.index);
+routes.get("/message", MessageController.index);
+
+module.exports = routes;
