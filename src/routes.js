@@ -1,8 +1,8 @@
 const express = require("express");
 const routes = express.Router();
 
-const MessageController = require("./controllers/MessageController");
+const TextController = require("./controllers/TextController");
 
-routes.get("/message", MessageController.index);
+routes.get("/Text", TextController.index);
 
 module.exports = routes;
