@@ -17,7 +17,10 @@ module.exports = {
     try {
       const texts = await Text.find();
 
-      return res.json({ texts });
+      return res.json({
+        texts,
+        message: "Texto retornado com sucesso!",
+      });
     } catch (error) {
       return res.json({ error });
     }

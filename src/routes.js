@@ -5,6 +5,6 @@ const TextController = require("./controllers/TextController");
 
 routes.post("/text", TextController.store);
 
-routes.get("/text", TextController.index);
+routes.get("/text-msg", TextController.index);
 
 module.exports = routes;
