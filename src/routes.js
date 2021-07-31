@@ -3,6 +3,8 @@ const routes = express.Router();
 
 const TextController = require("./controllers/TextController");
 
-routes.get("/Text", TextController.index);
+routes.post("/text", TextController.store);
+
+routes.get("/text", TextController.index);
 
 module.exports = routes;
